@@ -30,8 +30,9 @@ export default function ProductDetail() {
           <div className="row g-0">
             <div className="col-md-5">
               <img
-                src={product.images}
-                className="img-fluid rounded-start h-100"
+                src={product.images && product.images[0]}
+                className="card-img-top"
+                alt={product.title}
                 style={{ objectFit: "cover" }}
               />
             </div>

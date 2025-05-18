@@ -10,7 +10,7 @@ export default function ProductList() {
   useEffect(() => {
     const skip = (page - 1) * limit;
     axiosInstance
-      .get("/products", {
+      .get("/products/category/smartphones", {
         params: {
           limit: 10,
           skip: skip,
